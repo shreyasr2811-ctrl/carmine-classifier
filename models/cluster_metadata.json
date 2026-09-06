@@ -1,0 +1,126 @@
+{
+  "k": 4,
+  "feature_names": [
+    "involvement",
+    "nuclear_load",
+    "pleomorphism"
+  ],
+  "n_patients": 274,
+  "threshold": 0.5,
+  "model_selection": [
+    {
+      "k": 2,
+      "bic": 2080.6461363418007,
+      "aic": 2011.9967023204274,
+      "silhouette": 0.27106039010896893,
+      "converged": true
+    },
+    {
+      "k": 3,
+      "bic": 2016.4903632914757,
+      "aic": 1911.7096482062216,
+      "silhouette": 0.23169492165750274,
+      "converged": true
+    },
+    {
+      "k": 4,
+      "bic": 1909.9845244669882,
+      "aic": 1769.0725283178535,
+      "silhouette": 0.21186725481848473,
+      "converged": true
+    },
+    {
+      "k": 5,
+      "bic": 1934.4515607868855,
+      "aic": 1757.40828357387,
+      "silhouette": 0.21475022984386288,
+      "converged": true
+    },
+    {
+      "k": 6,
+      "bic": 1953.3986913489025,
+      "aic": 1740.2241330720065,
+      "silhouette": 0.19322546730869442,
+      "converged": true
+    },
+    {
+      "k": 7,
+      "bic": 1929.0971950916492,
+      "aic": 1679.7913557508723,
+      "silhouette": 0.17120170865222284,
+      "converged": true
+    },
+    {
+      "k": 8,
+      "bic": 1917.2510749879361,
+      "aic": 1631.8139545832787,
+      "silhouette": 0.17888838345143504,
+      "converged": true
+    }
+  ],
+  "bic_preferred_k": 4,
+  "converged": true,
+  "profiles": [
+    {
+      "component": 2,
+      "n": 26,
+      "means": {
+        "involvement": 0.0,
+        "nuclear_load": 0.04727732849352759,
+        "pleomorphism": 0.4326615965198361
+      },
+      "label": "Group 1",
+      "descriptor": "No flagged tissue"
+    },
+    {
+      "component": 1,
+      "n": 54,
+      "means": {
+        "involvement": 0.2706594528081456,
+        "nuclear_load": 0.3738664902998237,
+        "pleomorphism": 1.9490729673875338
+      },
+      "label": "Group 2",
+      "descriptor": "Limited involvement, dense tissue, variable nuclei"
+    },
+    {
+      "component": 3,
+      "n": 102,
+      "means": {
+        "involvement": 0.5621323926197148,
+        "nuclear_load": 0.16331922443569502,
+        "pleomorphism": 1.0992156633661412
+      },
+      "label": "Group 3",
+      "descriptor": "Moderate involvement, sparse tissue, uniform nuclei"
+    },
+    {
+      "component": 0,
+      "n": 92,
+      "means": {
+        "involvement": 0.6363545439378783,
+        "nuclear_load": 0.612896562842896,
+        "pleomorphism": 1.4755398156917128
+      },
+      "label": "Group 4",
+      "descriptor": "Moderate involvement, dense tissue, variable nuclei"
+    }
+  ],
+  "silhouette_at_k": 0.21186725481848473,
+  "covariance_type": "full",
+  "reg_covar": 0.0001,
+  "ordering": "mean involvement x (0.5 + mean nuclear load), stated not learned",
+  "k_note": "k was set for interpretability; on this feature set BIC independently agrees. Any disagreement is recorded in model_selection.",
+  "focality_measurable": 140,
+  "focality_note": "Focality is measured and reported but excluded from the fit: it was unavailable for 138 of 274 patients and the neutral value substituted for them formed a point mass the mixture clustered on.",
+  "posterior": {
+    "method": "bootstrap-averaged over refits of the mixture",
+    "n_boot": 60,
+    "alignment_cost_mean": 0.4329758674718712,
+    "alignment_cost_max": 1.9854925685065186,
+    "cohort_median_top_prob": 0.7003388262303066,
+    "cohort_median_top_prob_single_fit": 0.97650567116186,
+    "argmax_agreement_with_single_fit": 0.9087591240875912,
+    "note": "Averaging over mixtures refitted on bootstrap resamples propagates uncertainty in the component estimates into the reported probability. Nothing is rescaled."
+  }
+}

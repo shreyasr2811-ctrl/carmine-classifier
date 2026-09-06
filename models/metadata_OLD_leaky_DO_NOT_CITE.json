@@ -1,0 +1,35 @@
+{
+  "best_model": "xgboost",
+  "val_results": {
+    "random_forest": {
+      "val_acc": 0.84,
+      "val_auc": 0.9064691358024691,
+      "val_precision": 0.8227848101265823,
+      "val_recall": 0.8666666666666667,
+      "val_f1": 0.8441558441558441
+    },
+    "xgboost": {
+      "val_acc": 0.86,
+      "val_auc": 0.9239703703703703,
+      "val_precision": 0.8584070796460177,
+      "val_recall": 0.8622222222222222,
+      "val_f1": 0.8603104212860311
+    }
+  },
+  "test_accuracy": 0.8577777777777778,
+  "test_auc": 0.9203950617283951,
+  "confusion_matrix": [
+    [
+      193,
+      32
+    ],
+    [
+      32,
+      193
+    ]
+  ],
+  "n_train": 2100,
+  "n_val": 450,
+  "n_test": 450,
+  "feature_dim": 118
+}

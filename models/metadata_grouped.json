@@ -1,0 +1,173 @@
+{
+  "n_images": 3000,
+  "n_patients": 274,
+  "feature_dim": 118,
+  "naive_patch_level_split": {
+    "accuracy": 0.8588888888888889,
+    "auc": 0.9222864197530865,
+    "sensitivity_recall_malignant": 0.86,
+    "specificity_recall_benign": 0.8577777777777778,
+    "ppv_precision": 0.8580931263858093,
+    "npv": 0.8596881959910914,
+    "f1": 0.8590455049944506,
+    "confusion_matrix": {
+      "tn": 386,
+      "fp": 64,
+      "fn": 63,
+      "tp": 387
+    },
+    "n": 900,
+    "patients_leaked": 247
+  },
+  "grouped_cross_validation": {
+    "dummy_baseline": {
+      "accuracy": {
+        "mean": 0.4993305350468183,
+        "std": 0.00033474355804548686
+      },
+      "auc": {
+        "mean": 0.5,
+        "std": 0.0
+      },
+      "sensitivity_recall_malignant": {
+        "mean": 0.4,
+        "std": 0.48989794855663565
+      },
+      "specificity_recall_benign": {
+        "mean": 0.6,
+        "std": 0.48989794855663565
+      },
+      "ppv_precision": {
+        "mean": 0.49916526615328444,
+        "std": 2.7870913079097726e-06
+      },
+      "npv": {
+        "mean": 0.4994407143091742,
+        "std": 0.0003954763746037286
+      },
+      "f1": {
+        "mean": 0.6659242678836055,
+        "std": 2.480174108199229e-06
+      }
+    },
+    "logistic_regression": {
+      "accuracy": {
+        "mean": 0.8210074933236233,
+        "std": 0.015751834682806404
+      },
+      "auc": {
+        "mean": 0.8901810336695488,
+        "std": 0.017827826966703025
+      },
+      "sensitivity_recall_malignant": {
+        "mean": 0.8307427793504418,
+        "std": 0.035699181484659684
+      },
+      "specificity_recall_benign": {
+        "mean": 0.8113317730352266,
+        "std": 0.03086707948184555
+      },
+      "ppv_precision": {
+        "mean": 0.8158000433151387,
+        "std": 0.021836532529853698
+      },
+      "npv": {
+        "mean": 0.8287015219549598,
+        "std": 0.027569862725705347
+      },
+      "f1": {
+        "mean": 0.8224982255754651,
+        "std": 0.017109387458530023
+      }
+    },
+    "random_forest": {
+      "accuracy": {
+        "mean": 0.8220078786390926,
+        "std": 0.02714405247660015
+      },
+      "auc": {
+        "mean": 0.8903414274942175,
+        "std": 0.021285102097368
+      },
+      "sensitivity_recall_malignant": {
+        "mean": 0.8321295247921796,
+        "std": 0.028420670659098205
+      },
+      "specificity_recall_benign": {
+        "mean": 0.8119458942722877,
+        "std": 0.04985607214720328
+      },
+      "ppv_precision": {
+        "mean": 0.8174370119919356,
+        "std": 0.03783815415608931
+      },
+      "npv": {
+        "mean": 0.828996972212785,
+        "std": 0.02417826052080593
+      },
+      "f1": {
+        "mean": 0.8240141140393981,
+        "std": 0.024260392342520695
+      }
+    },
+    "xgboost": {
+      "accuracy": {
+        "mean": 0.8263764779755822,
+        "std": 0.025128078895917876
+      },
+      "auc": {
+        "mean": 0.8970212632603374,
+        "std": 0.02149499234513817
+      },
+      "sensitivity_recall_malignant": {
+        "mean": 0.8274561541981788,
+        "std": 0.02477048021330998
+      },
+      "specificity_recall_benign": {
+        "mean": 0.8253375731846948,
+        "std": 0.04167279759983875
+      },
+      "ppv_precision": {
+        "mean": 0.8268813587478044,
+        "std": 0.03408001913685458
+      },
+      "npv": {
+        "mean": 0.8272343619397654,
+        "std": 0.022276841195123156
+      },
+      "f1": {
+        "mean": 0.8267240893359091,
+        "std": 0.023228747392471213
+      }
+    }
+  },
+  "n_folds": 5,
+  "grouped_holdout": {
+    "accuracy": 0.8420168067226891,
+    "auc": 0.9105936320701422,
+    "sensitivity_recall_malignant": 0.8187919463087249,
+    "specificity_recall_benign": 0.8653198653198653,
+    "ppv_precision": 0.8591549295774648,
+    "npv": 0.8263665594855305,
+    "f1": 0.838487972508591,
+    "confusion_matrix": {
+      "tn": 257,
+      "fp": 40,
+      "fn": 54,
+      "tp": 244
+    },
+    "n": 595,
+    "accuracy_95ci": [
+      0.8105281613675729,
+      0.8691173408821039
+    ],
+    "n_train_patches": 2405,
+    "n_test_patches": 595,
+    "n_train_patients": 220,
+    "n_test_patients": 54
+  },
+  "leakage_inflation": {
+    "accuracy": 0.016872082166199842,
+    "auc": 0.011692787682944239
+  }
+}

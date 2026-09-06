@@ -1,0 +1,22 @@
+[theme]
+# Base values only. The real design system is injected at runtime from
+# ui/theme.py, which also drives the in-app Light/Dark switch. These settings
+# exist so the first paint (before CSS lands) is already the warm clinical
+# light theme rather than flashing Streamlit's default white/grey.
+base = "light"
+primaryColor = "#BE7C88"
+backgroundColor = "#FBF6F3"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#5A4B46"
+font = "sans serif"
+
+[server]
+maxUploadSize = 800
+enableStaticServing = false
+
+[browser]
+gatherUsageStats = false
+
+[client]
+showErrorDetails = true
+toolbarMode = "minimal"
